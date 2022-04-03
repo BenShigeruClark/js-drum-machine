@@ -11,7 +11,6 @@ body {
 
 i,svg {
     pointer-events: none;
-    /* background-color: black; */
 }
 
 .kick-pad, .snare-pad, .hihat-pad {
@@ -62,7 +61,7 @@ i,svg {
 }
 
 .controls button {
-    padding: 1.4rem;
+    padding: 1rem;
     border: none;
     background: #cfeb1d;
 }
