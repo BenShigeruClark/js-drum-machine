@@ -5,8 +5,15 @@
 }
 
 body {
-    /* font-family: sans-serif; */
+    /* font-family: 'Source Code Pro', monospace; */
+    /* font-family: 'Varela Round', sans-serif; */
+    color: #47465c;
     background: #EEFCCE;
+}
+
+h1 {
+    font-family: 'Varela Round', sans-serif;
+    font-size: 1.9rem;
 }
 
 i,svg {
@@ -64,4 +71,56 @@ i,svg {
     padding: 1rem;
     border: none;
     background: #cfeb1d;
+    color: #F27900;
+    font-size: 1.9rem;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.controls button:hover {
+    background: #F27900;
+    color: #cfeb1d;
+}
+
+.pad {
+    transition: all 0.5s ease;
+}
+
+.kick-pad.active {
+    background: #DDDA00;
+}
+
+.snare-pad.active {
+    background: #DD1D00;
+}
+
+.hihat-pad.active {
+    background: #F27900;
+}
+
+.play {
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    background: #F27900;
+    color: #cfeb1d;
+    border: none;
+    margin-top: 3rem;
+    border-radius: 5px;
+}
+
+.play:hover {
+    background: #cfeb1d;
+    color: #F27900;
+}
+
+select {
+    padding: 1rem;
+    font-size: 1rem;
+    margin-left: 1rem;
+    border: none;
+    background: #DD1D00;
+    color: #F1DB4B;
+    border-radius: 5px;
+    /* font-family: 'Source Code Pro', monospace; */
+    font-family: 'Varela Round', sans-serif;
 }
