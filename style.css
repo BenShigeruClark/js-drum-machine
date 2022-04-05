@@ -124,3 +124,12 @@ select {
     /* font-family: 'Source Code Pro', monospace; */
     font-family: 'Varela Round', sans-serif;
 }
+
+@keyframes playTrack {
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.2);
+    }
+}
