@@ -40,20 +40,20 @@ class Drumkit {
         this.index++;
     }
     start() {
-        console.log(this);
         const interval = (60/this.bpm) * 1000;
         // Check if it's playing
-        if(!this.isPlaying) {
-            this.isPlaying = setInterval(() => {
-                this.repeat();
-            }, interval);
-        } else {
+        if(this.isPlaying) {
             // Clear the interval
             clearInterval(this.isPlaying);
             this.isPlaying = null;
+        } else {
+            this.isPlaying = setInterval(() => {
+                this.repeat();
+            }, interval);
         }
     }
     updateBtn() {
+        console.log(this.isPlaying);
         if(!this.isPlaying) {
             this.playBtn.innerText = 'Stop';
             this.playBtn.classList.add('active');
