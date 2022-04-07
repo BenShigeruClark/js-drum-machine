@@ -11,6 +11,31 @@ body {
     background: #EEFCCE;
 }
 
+/* 980px / 16px = 61.25em */
+@media (max-width: 61.25em) {
+    html, body {
+        font-size: 65%;
+        justify-content: center;
+        margin:0;
+        padding:0;
+        /* overflow-x: hidden; */
+    }
+  }
+
+/* 460px / 16px = 28.75em */
+@media screen and (max-width: 28.75em) {
+    html, body {
+        font-size: 30%;
+        justify-content: center;
+        text-align: center;
+    }
+    .sequencer {
+        min-height: 20vh;
+        flex-direction: column;
+    }
+    
+}
+
 h1 {
     font-family: 'Varela Round', sans-serif;
     font-size: 1.9rem;
