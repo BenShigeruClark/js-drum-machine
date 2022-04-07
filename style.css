@@ -125,6 +125,11 @@ select {
     font-family: 'Varela Round', sans-serif;
 }
 
+.mute.active {
+    background: #DD1D00;
+    color: #F1DB4B
+}
+
 @keyframes playTrack {
     from{
         transform: scale(1);
