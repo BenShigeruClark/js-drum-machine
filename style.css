@@ -6,7 +6,7 @@
 
 body {
     /* font-family: 'Source Code Pro', monospace; */
-    /* font-family: 'Varela Round', sans-serif; */
+    font-family: 'Varela Round', sans-serif;
     color: #47465c;
     background: #EEFCCE;
 }
@@ -130,6 +130,30 @@ select {
     color: #F1DB4B
 }
 
+.tempo {
+    margin: 3rem;
+    width: 30%;
+}
+
+.tempo-slider {
+    padding: 0.2rem;
+    -webkit-appearance: none;
+    margin: 1rem 0rem;
+    width: 100%;
+    position: relative;
+    background: #DDDA00;
+    cursor: pointer;
+    border-radius: 1rem;
+    /* color: #F1DB4B */
+}
+
+.tempo p {
+    font-size: 1.5rem;
+    margin: 2rem;
+    text-align: center;
+
+}
+
 @keyframes playTrack {
     from{
         transform: scale(1);
@@ -138,3 +162,4 @@ select {
         transform: scale(1.2);
     }
 }
+
