@@ -12,6 +12,7 @@ class Drumkit {
         this.bpm = 150;
         this.isPlaying = null;
         this.selects = document.querySelectorAll('select');
+        this.muteBtns = document.querySelectorAll('.mute');
     }
 
     activePad() {
@@ -80,6 +81,9 @@ class Drumkit {
                 break;
         }
     }
+    mute(e) {
+        console.log(e);
+    }
 }
 
 const drumKit = new Drumkit();
@@ -102,5 +106,11 @@ drumKit.playBtn.addEventListener('click', function () {
 drumKit.selects.forEach(select => {
     select.addEventListener('change', function(e) {
         drumKit.changeSound(e);
+    });
+});
+
+drumKit.muteBtns.forEach(btn => {
+    btn.addEventListener('onclick', function(e) {
+        drumKit.mute(e);
     });
 });
